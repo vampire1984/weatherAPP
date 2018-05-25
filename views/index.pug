@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1.title= title
+  form(action="/weather" method="get").customForm
+    div(class=error) Weather is only available for London and New York 
+    div.form-group.customDiv
+      label.customLabel(for="email") Email:
+      input#email.form-control(type="email", name="email", placeholder="Please enter your E-mail address" required="required" value=email).customInput
+    div.form-group.customDiv
+      label.customLabel(for="city") City:
+      input#city.form-control(type="text", name="city", placeholder="Please enter your City" required="required" value=city).customInput
+    div.form-group.text-center
+        button.btn.btn-primary.submitButton(type="submit") SUBMIT

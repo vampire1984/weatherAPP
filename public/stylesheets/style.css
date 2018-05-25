@@ -1,0 +1,108 @@
+body {
+  padding: 50px 0 0 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: lightgray;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.col-md-9 h1 {
+  display: inline;
+}
+.country {
+  color: black;
+}
+.customForm {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.customDiv {
+  margin-bottom: 20px;
+}
+.customLabel {
+  font-size: 16px;
+  font-weight: bold;
+}
+.customInput {
+  display: block;
+  margin: 10px 0;
+  font-size: 14px;
+  min-width: 250px;
+}
+.submitButton {
+  padding: 10px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  display: inline-block;
+}
+.noError {
+  display: none;
+}
+.throwError {
+  display: block;
+  text-align: center;
+  background-color: lightcoral;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  font: 12px;
+}
+.rightDate {
+  margin-bottom: 10px;
+}
+.rightDate p {
+  text-align: right;
+  font-weight: bold;
+}
+.customBlock {
+  clear: both;
+  margin-bottom: 10px;
+  display: block;
+}
+span.stateWeather {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+}
+.customImage {
+  display:inline;
+  vertical-align: bottom;
+}
+.customImage.stateWeather {
+  width: 50px;
+  height: 50px;;
+}
+.customImage.wind {
+	width:1em;
+  height:1em;
+  margin-right: 5px;
+}
+.customImage.wind.wind_NNE {transform: rotate(22.5deg)}
+.customImage.wind.wind_NE {transform: rotate(45deg)}
+.customImage.wind.wind_ENE {transform: rotate(67.5deg)}
+.customImage.wind.wind_E {transform: rotate(90deg)}
+.customImage.wind.wind_ESE {transform: rotate(112.5deg)}
+.customImage.wind.wind_SE {transform: rotate(135deg)}
+.customImage.wind.wind_SSE {transform: rotate(157.5deg)}
+.customImage.wind.wind_S {transform: rotate(180deg)}
+.customImage.wind.wind_SSW {transform: rotate(202.5deg)}
+.customImage.wind.wind_SW {transform: rotate(225deg)}
+.customImage.wind.wind_WSW {transform: rotate(247.5deg)}
+.customImage.wind.wind_W {transform: rotate(270deg)}
+.customImage.wind.wind_WNW {transform: rotate(292.5deg)}
+.customImage.wind.wind_NW {transform: rotate(315deg)}
+.customImage.wind.wind_NNW {transform: rotate(337.5deg)}
+
+.titleWeather {
+  font-weight: bold;
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+}

@@ -1,0 +1,51 @@
+
+extends layout
+
+block content
+
+    div.container
+        div.row
+            div.col-md-9.col-12
+                h1= data.title + ", " 
+                a(href="https://www.metaweather.com/"+data.woeid+" " target="_blank" class="country")=data.country
+            div.col-md-3.col-12
+                div.row
+                    div.row.col-12.rightDate
+                        p.col-6 Time
+                        span.col-6= data.created
+                    div.row.col-12.rightDate
+                        p.col-6 Sunrise
+                        span.col-6= data.sun_rise
+                    div.row.col-12.rightDate
+                        p.col-6 Sunset
+                        span.col-6= data.sun_set
+    div.container
+        div.row
+            div.col-12
+                h4="Today: "+data.applicable_date
+                div.row.col-12
+                    img(src="https://www.metaweather.com/static/img/weather/"+data.weather_state_abbr+".svg" class="customImage stateWeather")
+                    span.stateWeather= data.weather_state_name
+                p.customBlock
+                div.row.col-12
+                    p.row.col-12="Max: "+ data.max_temp +"°C"              
+                    p.row.col-12="Min: "+data.min_temp +"°C"
+                div.row.col-12
+                    img(src="https://www.metaweather.com/static/img/windarrow.svg" class="customImage wind wind_"+data.wind_direction_compass+" ")
+                    span= data.wind_speed+"mph"
+                p.customBlock
+                    
+                div.row.col-12
+                    p.customBlock                
+                    p.titleWeather Humidity
+                    span= data.humidity+"%"
+                    p.titleWeather Visibility   
+                    span= data.visibility+" miles"
+                    p.titleWeather Pressure
+                    span= data.air_pressure+"mb"
+                p.customBlock     
+                div.row.col-12                    
+                    p.titleWeather Confidence
+                    span= data.predictability+"%"
+
+    
